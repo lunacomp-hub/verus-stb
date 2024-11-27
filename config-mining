@@ -1,5 +1,7 @@
 #!/bin/bash
-
+# luckpool = stratum+tcp://ap.luckpool.net:3956
+# vipor    = stratum+tcp://cn.vipor.net:5040
+# verus.io = stratum+tcp://pool.verus.io:9998
 # Konfigurasi mining
 ccminer_path="/root/ccminer"
 algorithm="verus"
