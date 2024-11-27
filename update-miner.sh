@@ -1,4 +1,4 @@
-sudo systemctl restart ccminer.service
+sudo systemctl stop ccminer.service
 cd
 rm -f ganti-wallet-solo
 rm -f ganti-wallet-pool
