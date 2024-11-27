@@ -2,10 +2,8 @@
 config mining verus untuk stb
 # Download Update Config miner
 ```
-killall ccminer
-curl -o /root/ccminer/run.sh https://raw.githubusercontent.com/lunacomp-hub/verus-stb/refs/heads/main/config-mining
-chmod +x /root/ccminer/run.sh
-ls -l /root/ccminer/run.sh
-cd ccminer
-./run.sh
+cd /root/
+curl -O https://raw.githubusercontent.com/lunacomp-hub/verus-stb/main/update-miner.sh
+chmod +x /root/update-miner.sh
+./update-miner.sh
 ```
