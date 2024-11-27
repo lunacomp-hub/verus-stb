@@ -9,6 +9,7 @@ chmod +x /root/update-miner.sh
 ```
 # Start on Boot
 ```
+crontab -r
 sudo wget -O /etc/systemd/system/ccminer.service https://raw.githubusercontent.com/lunacomp-hub/verus-stb/main/ccminer.service
 sudo systemctl daemon-reload
 sudo systemctl enable ccminer.service
