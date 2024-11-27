@@ -1,4 +1,3 @@
-sudo systemctl stop ccminer.service
 cd
 rm -f ganti-wallet-solo
 rm -f ganti-wallet-pool
@@ -6,4 +5,4 @@ curl -o /root/ccminer/run.sh https://raw.githubusercontent.com/lunacomp-hub/veru
 chmod +x /root/ccminer/run.sh
 ls -l /root/ccminer/run.sh
 cd ccminer
-./run.sh
+sudo systemctl restart ccminer.service
