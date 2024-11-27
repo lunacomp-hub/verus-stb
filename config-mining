@@ -10,7 +10,6 @@ stratum_server="stratum+tcp://ap.luckpool.net:3956"
 base_username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk"
 hostname=$(hostname)
 username="${base_username}.${hostname}"
-#extra_params="xnsub"
 
 # Get the number of CPU threads available
 threads=$(nproc)
