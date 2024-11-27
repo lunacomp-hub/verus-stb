@@ -1,1 +1,20 @@
+#!/bin/bash
+
+# Konfigurasi mining
+ccminer_path="/root/ccminer"
+algorithm="verus"
+stratum_server="stratum+tcp://ap.luckpool.net:3956"
+username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk.$(hostname)"
+threads=$(nproc)
+log_file="/var/log/ccminer.log"
+
+# Menampilkan konfigurasi
+echo "Mining Configuration:"
+echo "  Algorithm      : $algorithm"
+echo "  Stratum Server : $stratum_server"
+echo "  Username       : $username"
+echo "  Threads        : $threads"
+
+# Menjalankan ccminer dan mencatat log
+"$ccminer_path" -a "$algorithm" -o "$stratum_server" -u "$username" -t "$threads" | tee -a "$log_file"
 
