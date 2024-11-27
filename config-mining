@@ -1,12 +1,13 @@
 #!/bin/bash
 # luckpool = stratum+tcp://ap.luckpool.net:3956
 # vipor    = stratum+tcp://cn.vipor.net:5040
+# verus.io = stratum+tcp://pool.verus.io:9998
 # Path to ccminer executable
 ccminer_path="/root/ccminer"
 
 # Mining parameters
 algorithm="verus"
-stratum_server="stratum+tcp://ap.luckpool.net:3956"
+stratum_server="stratum+tcp://pool.verus.io:9998"
 base_username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk"
 hostname=$(hostname)
 username="${base_username}.${hostname}"
