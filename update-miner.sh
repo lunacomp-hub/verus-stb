@@ -12,6 +12,4 @@ sudo wget -O /etc/systemd/system/ccminer.service https://raw.githubusercontent.c
 sudo systemctl daemon-reload
 sudo systemctl enable ccminer.service
 sudo systemctl start ccminer.service
-sudo systemctl status ccminer.service
-
 sudo systemctl restart ccminer.service
