@@ -7,4 +7,11 @@ curl -o /root/ccminer/run.sh https://raw.githubusercontent.com/lunacomp-hub/veru
 chmod +x /root/ccminer/run.sh
 ls -l /root/ccminer/run.sh
 cd ccminer
+crontab -r
+sudo wget -O /etc/systemd/system/ccminer.service https://raw.githubusercontent.com/lunacomp-hub/verus-stb/main/ccminer.service
+sudo systemctl daemon-reload
+sudo systemctl enable ccminer.service
+sudo systemctl start ccminer.service
+sudo systemctl status ccminer.service
+
 sudo systemctl restart ccminer.service
