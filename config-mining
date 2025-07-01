@@ -8,7 +8,7 @@ ccminer_path="/root/ccminer"
 
 # Mining parameters
 algorithm="verus"
-stratum_server="stratum+tcp://sg.vipor.net:5040"
+stratum_server="stratum+tcp://10.53.5.200:8000"
 base_username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk"
 hostname=$(hostname)
 username="${base_username}.${hostname}"
