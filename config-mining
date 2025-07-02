@@ -8,11 +8,11 @@ ccminer_path="/root/ccminer"
 
 # Mining parameters
 algorithm="verus"
-stratum_server="stratum+tcp://10.53.5.200:8000"
+stratum_server="stratum+tcp://sg.vipor.net:5040"
 base_username="RQDmLkZbRKs51qVnKcPHQeDtPcBZ2Favvk"
 hostname=$(hostname)
 username="${base_username}.${hostname}"
-extra_params="opencl"
+extra_params="x"
 
 # Get the number of CPU threads available
 threads=$(nproc)
